@@ -87,7 +87,8 @@ const handleSubmit = async (e) => {
     loader(messageDiv)
 
     // const response = await fetch('http://localhost:5000  ', {
-    const response = await fetch('https://chatgpt-plse.onrender.com', {
+    // https://chatgpt-ai-r60f.onrender.com
+    const response = await fetch('https://chatgpt-ai-r60f.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -108,7 +109,7 @@ const handleSubmit = async (e) => {
     } else {
         const err = await response.text();
 
-        messageDiv.innerHTML = "Something went wrong";
+        messageDiv.innerHTML = "Something seems wrong";
         alert(err); 
     }
 }
